@@ -6,43 +6,74 @@
     <title>Muhammad Nabeel | Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #222;
             color: white;
             padding: 20px;
-            font-size: 24px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
         }
         .container {
             width: 80%;
-            margin: 20px auto;
+            max-width: 1000px;
+            margin: 40px auto;
             background: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .content {
+            text-align: center;
+            line-height: 1.6;
+        }
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .projects li {
+            background: #eef;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
         .btn {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
+            margin-top: 20px;
+            padding: 12px 24px;
             background-color: #007BFF;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
         }
         .btn:hover {
             background-color: #0056b3;
         }
         footer {
-            margin-top: 20px;
-            background-color: #333;
+            margin-top: 40px;
+            background-color: #222;
             color: white;
-            padding: 10px;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -50,21 +81,23 @@
     <header>Muhammad Nabeel</header>
     <div class="container">
         <h2>About Me</h2>
-        <p>Software Developer specializing in Angular, .NET, Docker, GitHub Actions, and Azure.</p>
+        <p class="content">I am a software developer specializing in Angular, .NET, Docker, GitHub Actions, and Azure. Passionate about building scalable applications and optimizing workflows.</p>
         <h2>Projects</h2>
-        <ul>
-            <li>Angular & .NET ABP Web Application</li>
-            <li>Azure Web App Deployment</li>
-            <li>GitHub Actions for CI/CD</li>
-        </ul>
-        <a href="https://github.com/nabeel9745" class="btn" target="_blank">GitHub Profile</a>
+        <div class="projects">
+            <ul>
+                <li><strong>Angular & .NET ABP Web Application</strong> - A scalable web solution using Angular and .NET ABP.</li>
+                <li><strong>Azure Web App Deployment</strong> - Deployed web apps using Azure services.</li>
+                <li><strong>GitHub Actions for CI/CD</strong> - Automated build and deployment pipelines.</li>
+            </ul>
+        </div>
+        <a href="https://github.com/nabeel9745" class="btn" target="_blank">View My GitHub</a>
     </div>
     <footer>
-        Contact: <a href="mailto:nabeel@example.com" style="color: white;">nabeel@example.com</a>
+        Contact: <a href="mailto:nabeel@example.com">nabeel@example.com</a>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            console.log("Welcome to Muhammad Nabeel's Portfolio");
+            console.log("Welcome to Muhammad Nabeel's Professional Portfolio");
         });
     </script>
 </body>
